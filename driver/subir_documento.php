@@ -48,11 +48,11 @@ if ( isset( $_POST[ 'documento' ] ) ) {
 		if($nombre1 != "" || $nombre1 != null){
 			/*
 			$insertar = "DELETE FROM persona WHERE nombre1 = '$nombre1' AND nombre2 = '$nombre2' AND apellido1 = '$apellido1' AND fk_campaña = 8";
-
-			*/
+*/
+			
 
 			
-			$insertar = "INSERT INTO persona (nombre1, nombre2, apellido1, apellido2, identificacion, nacimiento, correo, telefono1, telefono2, telefono3, direccion, fk_sexo, fk_departamento, fk_municipio, fk_referido, fk_tipo_persona, departamento_votacion, municipio_votacion, corregimiento, vereda_barrio, fk_zona, fk_puesto, mesa, estado, fk_campaña) VALUES ('$nombre1', '$nombre2', '$apellido1', '$apellido2', '$identificacion', '$nacimiento', '$correo', '$telefono1', '$telefono2', '$telefono3', '$direccion', '$sexo', '$departamento', '$municipio', '13720', '$tipo', '100', '1101', '$corregimiento', '$vereda', '6', '103', '1', '1', '8')";
+			$insertar = "INSERT INTO persona (nombre1, nombre2, apellido1, apellido2, identificacion, nacimiento, correo, telefono1, telefono2, telefono3, direccion, fk_sexo, fk_departamento, fk_municipio, fk_referido, fk_tipo_persona, departamento_votacion, municipio_votacion, corregimiento, vereda_barrio, fk_zona, fk_puesto, mesa, estado, fk_campaña) VALUES ('$nombre1', '$nombre2', '$apellido1', '$apellido2', '$identificacion', '$nacimiento', '$correo', '$telefono1', '$telefono2', '$telefono3', '$direccion', '$sexo', '$departamento', '$municipio', '19273', '$tipo', '100', '1101', '$corregimiento', '$vereda', '6', '103', '1', '1', '8')";
 
 			if ( $conexion->query( $insertar ) == true ) {
 				unlink( $_FILES[ 'documento' ][ 'tmp_name' ] );
